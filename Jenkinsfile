@@ -12,5 +12,10 @@ pipeline {
         sh 'pwd'
       }
     }
+    stage('test') {
+      steps {
+        sh 'docker ps'
+      }
+    }
   }
 }
